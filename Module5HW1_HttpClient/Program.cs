@@ -1,12 +1,15 @@
-﻿using System;
+﻿using Module5HW1;
+using System;
+using System.Threading.Tasks;
 
 namespace Module5HW1_HttpClient
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            UserClient st = new UserClient();
+            await st.Run();
         }
     }
 }
